@@ -10,7 +10,7 @@ export default function Component() {
           <h1 className="text-2xl font-bold text-blue-700">VolunteerConecct</h1>
         </div>
         <div className="flex gap-2 ">
-          <Link href="/login"><Button sx={{ "color": "black", "fontSize": "1em" }} variant="plain"> Iniciar session </Button></Link>
+          <Link href="/login"><Button sx={{ "color": "black", "fontSize": "1em" }} variant="plain"> Iniciar sesión </Button></Link>
           <Link href="/register"><Button
             sx={{
               "color": "white", "bgcolor": "black", "fontSize": "1em",

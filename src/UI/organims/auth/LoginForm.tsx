@@ -49,7 +49,7 @@ export const LoginForm = () => {
                 handleError(JSON.parse(result.error))
                 return;
             }
-            router.push("/dashboard/projects")
+            router.push("/dashboard/Projects")
             router.refresh()
         } catch (error) {
             console.log(error);

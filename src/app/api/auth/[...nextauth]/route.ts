@@ -21,14 +21,14 @@ interface AuthUser {
 }
 
 export interface CustomSession extends Session {
-    user: {
+   user: {
         id?: string;
-        token?: string | null;
+        token?: string; // Eliminamos null para que sea compatible con 'string | undefined'
         name?: string | null;
         email?: string | null;
         image?: string | null;
-        photo?: string;  
-        role?: string;   
+        photo?: string;
+        role?: string;
     };
 }
 
@@ -94,4 +94,4 @@ export const authOptions: NextAuthOptions = {
 };
 
 export const GET = NextAuth(authOptions);
-export const POST = NextAuth(authOptions);
+export const POST = NextAuth(authOptions); 
